@@ -124,6 +124,7 @@ ShoppingList.prototype.onEditFocusOut = function(event) {
 };
 ShoppingList.prototype.onDeleteItemClicked = function(event) {
     var id = $(event.target).parents('li').data('id');
+    console.log( $(event.target).parents('li').length);
     this.deleteItem(id);
 };
 ShoppingList.prototype.getItems = function() {
@@ -144,6 +145,7 @@ ShoppingList.prototype.addItem = function(name) {
     ajax.done(this.getItems.bind(this));
 };
 ShoppingList.prototype.deleteItem = function(id) {
+    console.log(id);
     var ajax = $.ajax('/items/' + id, {
         type: 'DELETE',
         dataType: 'json'
@@ -152,6 +154,7 @@ ShoppingList.prototype.deleteItem = function(id) {
 };
 ShoppingList.prototype.editItem = function(id, name) {
     var item = {'name': name, 'id': id};
+    console.log(item + "item/object being sent");
     var ajax = $.ajax('/items/' + id, {
         type: 'PUT',
         data: JSON.stringify(item),
@@ -191,7 +194,7 @@ $(document).ready(function() {
         <script id="item-list-template" type="text/x-handlebars-template">
             <ul id="item-list">
                 {{#each items}}
-                <li data-id="{{ id }}{{ _id }}">
+                <li data-id="{{ _id }}">
                     <div class="display">
                         <span class="name">{{name}}</span>
                         <div class="delete">
