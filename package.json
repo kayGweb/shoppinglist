@@ -4,7 +4,7 @@
   "description": "Shopping list project",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "Antonio Kendall",
   "license": "ISC",
