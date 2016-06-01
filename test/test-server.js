@@ -11,7 +11,6 @@ var app = server.app;
 
 chai.use(chaiHttp);
 
-//console.log(chai.use(chaiHttp));
 
 describe('Shopping List', function() {
 before(function(done) {
