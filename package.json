@@ -4,7 +4,7 @@
   "description": "Shopping list thinkful project",
   "main": "server.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --reporter list --growl"
   },
   "author": "Antonio Kendall",
   "license": "ISC",
