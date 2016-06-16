@@ -3,9 +3,9 @@
         "url": " mongodb://kaygweb:thinkful@ds021989.mlab.com:21989/shopping-list"
     },
     "test": {
-        "url": "mongodb://localhost/shopping-list-test"
+        "url": "mongodb://kaygweb:thinkful@ds021989.mlab.com:21989/shopping-list"
     },
     "development": {
-        "url": "mongodb://localhost/shopping-list-dev"
+        "url": "mongodb://kaygweb:thinkful@ds021989.mlab.com:21989/shopping-list"
     }
 }
