@@ -8,3 +8,9 @@ addons:
     - mongodb-3.2-precise
     packages:
     - mongodb-org-server
+deploy:
+  provider: heroku
+  api_key: 7aa69f3b-112f-4be8-baf1-e63b07892214
+  app: hidden-basin-88824
+  on:
+    repo: kayGweb/shoppinglist

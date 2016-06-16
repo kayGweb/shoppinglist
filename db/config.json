@@ -1,6 +1,6 @@
 {
     "production": {
-        "url": "mongodb://localhost/shopping-list"
+        "url": " mongodb://kaygweb:thinkful@ds021989.mlab.com:21989/shopping-list"
     },
     "test": {
         "url": "mongodb://localhost/shopping-list-test"
